@@ -1,10 +1,13 @@
 'use strict';
 
-const sentenceStructures = {
-    beginning: [],
-    relation: [],
-    excuse: [],
-    createExcuse() {
-        beginningPhrase = this.beginning(Math.floor(Math.random()*2))
-    }
+const beginning = [];
+const relation = [];
+const excuse = [];
+
+const createExcuse = () => {
+    const startOfSentence = beginning[Math.floor(Math.random() * beginning.length)];
+    const relationOfSentence = relation[Math.floor(Math.round() * relation.length)];
+    const excuseOfSentence = excuse[Math.floor(Math.random() * excuse.length)];
+    
+    return `${startOfSentence} ${relationOfSentence} ${excuseOfSentence}.`;
 };
