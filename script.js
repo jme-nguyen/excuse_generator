@@ -1,7 +1,7 @@
 'use strict';
 
 const beginning = ['I','My'];
-const relation = ['dog','sister','mother','father','girlfriend','grandpa','grandma',];
+const relation = ['dog','sister','mother','father','girlfriend','grandpa','grandma'];
 const relationExcuse = ['has covid','has gotten sick','has died'];
 const excuse = ['have covid','am sick','have a headache'];
 
