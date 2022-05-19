@@ -1,7 +1,7 @@
 'use strict';
 
-const beginning = [];
-const relation = [];
+const beginning = ['I','My'];
+const relation = ['Dog','Sister','Mother','Father','Girlfriend','Grandpa','Grandma',];
 const excuse = [];
 
 const createExcuse = () => {
@@ -9,5 +9,9 @@ const createExcuse = () => {
     const relationOfSentence = relation[Math.floor(Math.round() * relation.length)];
     const excuseOfSentence = excuse[Math.floor(Math.random() * excuse.length)];
     
-    return `${startOfSentence} ${relationOfSentence} ${excuseOfSentence}.`;
+    if(beginning === 'My'){
+        return `${startOfSentence} ${relationOfSentence} ${excuseOfSentence}.`;
+    }
+
+    return `${startOfSentence} ${excuseOfSentence}.`;
 };
