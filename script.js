@@ -17,3 +17,10 @@ const createExcuse = () => {
     const excuseOfSentence = excuse[Math.floor(Math.random() * excuse.length)];
     return `${startOfSentence} ${excuseOfSentence}.`;
 };
+
+const displayExcuse = () => {
+    const outputRef = document.getElementById('output');
+    const output = createExcuse();
+
+    outputRef.innerHTML = `<p> ${output}</p>`
+}
